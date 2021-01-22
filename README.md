@@ -1,45 +1,45 @@
 # docker-tutorial
 just about docker tutorial for private use
 
-## running
+# running
 
-# -it  is keyword enable connect bash and use keyboard
+-it  is keyword enable connect bash and use keyboard
 
-# normal docker with gpu
+## normal docker with gpu
 sudo docker run -it --gpus all ubuntu:16.04
 sudo docker run -it --gpus all <name>:<tag>
 
-# nvidia cuda ver
+## nvidia cuda ver
 sudo docker run -it --gpus all nvidia/cuda:11.0-base
 
-## status
+# status
 sudo docker ps -a
 
-# stop
+## stop
 sudo docker stop <container id>
 
-# remove
+## remove
 sudo docker rm <container id>
 
-# restart
+## restart
 sudo docker restart <container id>
 
-# attach : attach to bash
+## attach : attach to bash
 sudo docker attach <container id>
 
-## version
+# version
 
-# check change
+## check change
 docker diff <container id> | head
 
-# commit (save image)
+## commit (save image)
 docker commit <container id> <name>:<tag>
 
-# delete image, should remove all container before doing
+## delete image, should remove all container before doing
 docker rmi <name>:<tag>
 
 
-## export
+# export
 
 search about dockerfile or push to dockerhub
 TBD
