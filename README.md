@@ -1,7 +1,7 @@
 # docker-tutorial
 just about docker tutorial for private use
 
-##running
+## running
 
 # -it  is keyword enable connect bash and use keyboard
 
@@ -12,7 +12,7 @@ sudo docker run -it --gpus all <name>:<tag>
 # nvidia cuda ver
 sudo docker run -it --gpus all nvidia/cuda:11.0-base
 
-##status
+## status
 sudo docker ps -a
 
 # stop
@@ -27,7 +27,7 @@ sudo docker restart <container id>
 # attach : attach to bash
 sudo docker attach <container id>
 
-##version
+## version
 
 # check change
 docker diff <container id> | head
@@ -39,7 +39,7 @@ docker commit <container id> <name>:<tag>
 docker rmi <name>:<tag>
 
 
-##export
+## export
 
 search about dockerfile or push to dockerhub
 TBD
